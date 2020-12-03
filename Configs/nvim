@@ -1,1 +1,41 @@
-/home/faedy2/.config/nvim/init.vim
+" Show line numbers on left of screen
+set number
+
+" Makes it so that you can click to move cursor
+" If you have issues copying text, hold SHIFT and try again
+set mouse=a
+
+set termguicolors
+syntax on
+set background = "dark"
+colorscheme desert
+
+" size of a hard tabstop
+set tabstop=4
+
+" always use spaces instead of tab characters
+set expandtab
+
+" size of an 'indent'
+set shiftwidth=4
+
+" Specify a directory for plugins
+call plug#begin('~/.config/nvim/plugged')
+
+" Make sure you use single quotes
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'fatih/vim-go'
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
+
+" Initialize plugin system
+call plug#end()
+
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }

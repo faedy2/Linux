@@ -1,1 +1,29 @@
-/home/faedy2/.config/fish/config.fish
+set fish_greeting
+
+# qt5ct is the command to edit current themes on Lubuntu (including fonts) - if you want to revert this, then you need to remove the two custom variables pointing to qt5ct
+
+# Functions
+function cheat
+	if not set -q argv[1]
+		curl cheat.sh
+	else
+		curl cheat.sh/$argv[1]		
+	end
+end
+
+# Remove stuff on right side of terminal window
+function fish_right_prompt
+    #intentionally left blank
+end
+
+# Aliases
+alias update="sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoclean -y && sudo apt-get autoremove -y"
+alias fishconfig="nvim ~/.config/fish/config.fish"
+alias i3config="nvim ~/.config/i3/config"
+alias i3sconfig="sudo nvim ~/.config/i3status/config"
+alias vi="nvim"
+alias vim="nvim"
+alias nvimconfig="sudo nvim ~/.config/nvim/init.vim"
+alias files="thunar"
+alias wifi="nmcli"
+alias kittyconfig="nvim ~/.config/kitty/kitty.conf"
