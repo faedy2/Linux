@@ -6,6 +6,8 @@
 # ß
 # If the above line is not correctly displayed, fix your editor first!
 
+# Location: ~/.config/i3status/config
+
 general {
         colors = true
         interval = 5

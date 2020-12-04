@@ -1,3 +1,5 @@
+# Location: ~/.config/fish/config.fish
+
 set fish_greeting
 
 # qt5ct is the command to edit current themes on Lubuntu (including fonts) - if you want to revert this, then you need to remove the two custom variables pointing to qt5ct
