@@ -1,5 +1,11 @@
 # Location: ~/.config/kitty/kitty.conf
 
+# Make it so that new windows/tabs will stay on the same pwd
+map kitty_mod+enter new_window_with_cwd
+map kitty_mod+n new_os_window_with_cwd
+# New tabs will open next to the current tab rather than at the end of the tabs list
+map kitty_mod+t new_tab_with_cwd !neighbor
+
 # Fonts
 font_family         Ubuntu Mono
 bold_font           auto
