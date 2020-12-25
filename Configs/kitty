@@ -6,6 +6,15 @@ map kitty_mod+n new_os_window_with_cwd
 # New tabs will open next to the current tab rather than at the end of the tabs list
 map kitty_mod+t new_tab_with_cwd !neighbor
 
+# Closing a tab will take you to the tab to the left of it
+tab_switch_strategy left
+
+# Put tab bar on top of the screen
+tab_bar_edge top
+
+# Confirm when closing window that contains at least 2 instances of kitty
+confirm_os_window_close 2
+
 # Fonts
 font_family         Ubuntu Mono
 bold_font           auto
